@@ -1,0 +1,75 @@
+body{
+    color:red;
+    font-size: 100px;
+    text-align: center;
+    background-color: yellow;
+}
+h1, h2, h3, h4, h5, h6{
+    color: blue;
+    font-size: 90px;
+    text-align: start;
+}
+p{
+    color: green;
+    font-size: 60px;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-left: 10px solid #999;
+    border-bottom: 10px solid #999;
+    border-right: 10px solid #999;
+    border-top: 10px solid #999;
+}
+a{
+    color: white;
+    font-size: 80px;
+    text-align: right;
+}
+ul, dl, ol{
+    color:black;
+    font-size: 70px;
+    text-align: start;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-left: 10px solid #999;
+    border-bottom: 10px solid #999;
+    border-right: 10px solid #999;
+    border-top: 10px solid #999;
+}
+li{
+    margin-left: 20px;
+    margin-top: 10px;
+    border-left: 10px solid #999;
+    border-bottom: 10px solid #999;
+    border-right: 10px solid #999;
+    border-top: 10px solid #999;
+}
+dd{
+    margin-left: 20px;
+    margin-top: 10px;
+    border-left: 10px solid #999;
+    border-bottom: 10px solid #999;
+    border-right: 10px solid #999;
+    border-top: 10px solid #999;
+}
+.container{
+    margin-left: 20px;
+    margin-top: 10px;
+    border-left: 10px solid #999;
+    border-bottom: 10px solid #999;
+    border-right: 10px solid #999;
+    border-top: 10px solid #999;
+    display: flex;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 50px;
+}
+.box_inner{
+    width: 20px;
+    height: 30px;
+    background-color: green;
+   
+}
