@@ -1,0 +1,84 @@
+body{
+    font-size: 30px;
+}
+
+.header__container{
+    max-width: 1280px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.menu__link:hover, .menu__link:focus{
+    text-decoration: underline;
+    color: blue;
+    transform: scale(1.2);
+}
+
+.logo:hover, .logo:focus{
+    text-decoration: underline;
+    color: blue;
+    transform: scale(1.2);
+    transform: rotate(360deg);
+}
+
+button{
+    width: 240px;
+    height: 50px;
+    display: inline-block;
+    background-color: white;
+    transition: 0.3s;
+    border: none;
+}
+
+button:hover{
+    text-decoration: underline;
+    background-color: blue;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #4a90e2;
+}
+
+button:active{
+    transform: scale(0.9);
+    color: blue;
+    background-color: black;
+    font-size: 20px;
+}
+
+p{
+    color: white;
+    transition: 0.3s;
+}
+
+p:hover, p:focus{
+    color: black;
+}
+
+input{
+    outline: none;
+    height: 35px;
+    transition: 0.3s;
+}
+
+input:focus{
+    transform: scale(1.5);
+    box-shadow: 0 0 10px #4a90e2;
+}
+
+input:hover{
+    color: blue;
+}
