@@ -1,0 +1,33 @@
+h3{
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #8f95a5;
+}
+
+.card__price-month{
+    display: flex;
+    border-radius: 5px;
+    background: #b3b3b3ee;
+    width: 240px;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+}
+
+.price{
+    font-size: 20px;
+}
+
+.month{
+    font-size: 18px;
+}
+
+.cards__container{
+    display: flex;
+    justify-content: space-around;
+}
