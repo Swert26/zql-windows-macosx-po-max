@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style_orders.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Заказы:</h1>
+
+    <div class="orders">
+      {% for order in orders %}
+      <div class="order-card">
+        <p class="order-id">Код: {{ order.id }}</p>
+        <p class="order-date">Дата: {{ order.date }}</p>
+        <p class="order-status">Статус: {{ order.status }}</p>
+        <p class="order-total">Цена общая: {{ order.total }}</p>
+        {% for item in order.items %}
+        <p class="item-name">Название: {{ item.name }}</p>
+        <p class="item-price">Цена/шт.: {{ item.price }}</p>
+        <p class="item-quantity">Кол-во: {{ item.quantity }}</p>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>

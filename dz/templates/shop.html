@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ title }}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Shop</h1>
+    <h2>Product list:</h2>
+    <div class="products">
+      {% for product in products %}
+      <div class="product-card">
+        <p class="product-name">{{ product.id }}</p>
+        <p class="product-description">{{ product.category }}</p>
+        {% if product.in_stock %}
+        <p class="product-price">{{ product.price }}₽</p>
+        {% else %}
+        <p class="not-stock">Товара нет здесь как и цены😭</p>
+        {% endif %}
+        <p class="rateing">{{ product.rating }}★</p>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
